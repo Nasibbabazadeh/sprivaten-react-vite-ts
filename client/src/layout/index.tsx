@@ -1,10 +1,11 @@
 import Footer from "../features/common/Footer";
 import Header from "../features/common/Header";
-import BookingLayout from "./bookingLayout";
-import ProductLayout from "./productsLayout";
-import ReviewLayout from "./reviewLayout";
-import TeamLayout from "./teamLayout";
-import VideoLayout from "./videoLayout";
+import BookingSection from "../sections/bookingSection";
+import ContactSection from "../sections/contactSection";
+import ProductSection from "../sections/productsSection";
+import ReviewSection from "../sections/reviewSection";
+import TeamSection from "../sections/teamSection";
+import VideoSection from "../sections/videoSection";
 
 export default function MainLayout() {
   return (
@@ -12,20 +13,23 @@ export default function MainLayout() {
       <div className="bg-[url('./assets/uploads/cover-1.png')] bg-no-repeat bg-cover ">
         <Header />
         <section>
-          <BookingLayout />
+          <BookingSection />
         </section>
       </div>
       <section>
-        <ProductLayout />
+        <ProductSection />
       </section>
       <section>
-        <VideoLayout />
+        <VideoSection />
       </section>
       <section>
-        <ReviewLayout />
+        <ReviewSection />
       </section>
       <section>
-        <TeamLayout />
+        <TeamSection />
+      </section>
+      <section>
+        <ContactSection />
       </section>
       <Footer />
     </>

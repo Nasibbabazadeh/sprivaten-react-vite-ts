@@ -6,6 +6,7 @@ export default {
     "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/layout/**/*.{js,ts,jsx,tsx,md}",
+    "./src/sections/**/*.{js,ts,jsx,tsx,md}",
   ],
   theme: {
     screens: {
@@ -43,6 +44,7 @@ export default {
       "bg-footer": "#252B42",
       "hr-bg": "#364067",
       "secondary-color-2": "#16697A",
+      "error-primary": "#b33939",
     },
     boxShadow: {
       "box-ellipse": "0px 18px 40px -12px #FF75B759",

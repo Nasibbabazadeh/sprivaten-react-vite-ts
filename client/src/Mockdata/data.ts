@@ -1,4 +1,4 @@
-import { UserIcon, DigitalMarketing, AwardIcon ,TeamProfile1,TeamProfile2,TeamProfile3} from '../../assets/index'
+import { UserIcon, DigitalMarketing, AwardIcon ,TeamProfile1,TeamProfile2,TeamProfile3} from '../assets/index'
 export const departments = ['HR', 'Engineering', 'Marketing', 'Sales', 'Finance',"Front Desk",
   "Sales",
   "Customer Support",

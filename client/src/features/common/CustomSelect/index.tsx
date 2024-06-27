@@ -1,8 +1,5 @@
 interface CustomSelectProps
-  extends React.DetailedHTMLProps<
-    React.SelectHTMLAttributes<HTMLSelectElement>,
-    HTMLSelectElement
-  > {
+  extends React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement> {
   label: string;
   name: string;
   options: string[];
@@ -15,26 +12,17 @@ interface CustomSelectProps
   disabledOption: string;
 }
 
-export default function CustomSelect({
-  label,
-  name,
-  options,
-  onChange,
-  disabledOption,
-}: Partial<CustomSelectProps>) {
+export default function CustomSelect({ label, name, options, onChange, disabledOption }: Partial<CustomSelectProps>) {
   return (
     <div className="flex flex-col gap-[12px]">
-      <label
-        htmlFor={name}
-        className="text-xs  text-text-color font-semibold tracking-[0.2px]"
-      >
+      <label htmlFor={name} className="text-xs  text-text-color font-semibold tracking-[0.2px]">
         {label}
       </label>
       <select
         id={name}
         name={name}
         onChange={onChange}
-        className="py-[15px] px-[21px] rounded-[5px]  border-muted-color bg-input-bg text-second-text-color text-sm tracking-[0.2px] "
+        className="py-[15px] px-[21px] rounded-[5px] border-[1px] border-muted-color bg-input-bg text-second-text-color text-sm tracking-[0.2px] "
       >
         <option value="select option" disabled selected>
           {disabledOption}
